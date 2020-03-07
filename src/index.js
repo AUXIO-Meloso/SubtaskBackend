@@ -1,6 +1,6 @@
 require('dotenv').config(); // Variáveis de Ambiente
-const cors = require('cors');
 const express = require('express'); // Controles de rotas 
+const cors = require('cors');
 
 const app = express(); // Criando uma aplicação node
 
