@@ -12,7 +12,7 @@ module.exports = (request, response, next) => { // Middlewares devem utilizar o 
 
     // Se o token está estruturado na forma correta ('Baerer' + 'token');
     if(!parts.length === 2)
-        return response.status(401).json({ error: 'Token error (Bearer + Token => Falar com Meloso)' });
+        return response.status(401).json({ error: 'Token error (Bearer + Token are not written correctly)' });
 
     const [ scheme, token ] = parts; // Desestruturação de um vetor
 
